@@ -1,0 +1,102 @@
+.title-container {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+ /* Image Container */
+.title-image-container {
+    flex: 4;
+    max-width: 80%; 
+    overflow: hidden; /* Hide overflow of the image */
+    line-height: 0;
+}
+
+/* Image */
+.title-image {
+    width: 100%; /* Fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: bottom; /* Ensures image aligns properly */
+}
+
+/* Text Container */
+.title-text-container {
+    flex: 2;           /* Adjust ratio as needed */
+    padding: 40px;
+    align-self: flex-end;  /* Align to bottom */
+    margin-bottom: 0;      /* Remove any bottom margin */
+    color: #fff;
+}
+
+/* Individual Text Elements */
+.title-text-overlapping {
+    font-size: 2.72em;
+    font-weight: bold;
+    font-family: Georgia, Times, serif;
+    /* text-decoration: underline; */
+}
+
+
+.title-text-static {
+    font-size: 2em;
+    font-family: Times, serif;
+}
+
+.title-text-author-date {
+    font-size: 1em;
+    font-family: "Lucida Console", monospace;
+    margin-bottom: 0;
+    /* font-family: Times, serif; */
+}
+
+.title-text-sub {
+    font-size: 1.32em;
+    /* font-family: "Lucida Console", monospace; */
+    font-family: "Geist Mono", monospace;
+    /* font-family: Times, serif; */
+    /* font-weight: bold; */
+}
+
+.hr-solid {
+    width : 100%;
+    border-top: 1px solid #ffffffe6;
+    margin-left: 0;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 992px) {
+    .title-text-overlapping {
+        font-size: 2.72vw;
+    }
+
+    .title-text-sub {
+        font-size: 1.32vw;
+    }
+
+    .title-text-author-date {
+        font-size: 1vw;
+    }
+    
+    .title-image-container {
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title-container {
+        flex-direction: column;
+    }
+    
+    .title-image-container {
+        max-width: 100%;
+    }
+    
+    .title-text-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
