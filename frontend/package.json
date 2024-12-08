@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "echarts": "^5.5.1",
-    "papaparse": "^5.4.1"
-  }
-}
